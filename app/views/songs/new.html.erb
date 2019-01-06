@@ -3,10 +3,10 @@
 <%=label_tag('song[name]', "My song name") %>
 <%= text_field_tag('song[name]') %><br>
 
-<%=label_tag(@artist.id)%>
+<%=label_tag song(@artist.id)%>
 <%=text_field_tag('artist_id')%>
 
-<%=label_tag(@genre.id)%>
+<%=label_tag song(@genre.id)%>
 <%=text_field_tag('song[genre_id]')%>
 
   <%= submit_tag "Create Song" %>
