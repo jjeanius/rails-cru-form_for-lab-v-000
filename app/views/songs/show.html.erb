@@ -1,4 +1,4 @@
 <h1>My Song <%= @song.name %></h1>
 
-<div>My Artist <%=link_to @song[artist_id], artist_url(@artist)%></div>
-<div>My Genre <%=link_to @song[genre_id], genre_url(@genre)%></div>
+<div>My Artist <%=link_to @song[artist_id], artist_path(@artist)%></div>
+<div>My Genre <%=link_to @song[genre_id], genre_path(@genre)%></div>
