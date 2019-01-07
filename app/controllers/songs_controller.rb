@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
 
+  
   def index
     @songs = Song.all
   end
@@ -10,8 +11,8 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new(song_params[:name, :artist_id, :genre_id])
-    #@artist.id = song(params[artist_id])
-    #@genre.id = song(params[artist_id])
+    
+
   end
 
   def create
@@ -31,6 +32,9 @@ def update
 end
 
 private
+
+  @artist = Artist.create(params[:name])
+  @genre = Genre.create(params[:name])
 
   def song_params(*args)
     params.require(:song).permit(*args)
