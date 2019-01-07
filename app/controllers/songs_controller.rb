@@ -10,8 +10,8 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new(song_params[:name, :artist_id, :genre_id])
-    @artist.id = song(params[artist_id])
-    @genre.id = song(params[artist_id])
+    #@artist.id = song(params[artist_id])
+    #@genre.id = song(params[artist_id])
   end
 
   def create
