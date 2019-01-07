@@ -11,11 +11,10 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new
-    SongsHelper
   end
 
   def create
-    @song = Song.new(song_params[:name, :artist_id, :genre_id])
+    @song = Song.new(song_params[:name])
     @song.save
     redirect_to song_path(@song)
   end
