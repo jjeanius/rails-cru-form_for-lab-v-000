@@ -1,1 +1,2 @@
 <h1>My Song <%= @song.name %></h1>
+<div>My Artist <%=link_to @song.artistn.name, artist_url(@song.artist)%></div>
