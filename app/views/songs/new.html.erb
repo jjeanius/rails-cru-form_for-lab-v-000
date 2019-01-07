@@ -1,7 +1,7 @@
 <%= form_tag("/songs") do %>
 
 <%=label_tag('song[name]', "My song name") %>
-<%= text_field_tag('song[name]') %><br>
+<%=text_field_tag('song[name]') %><br>
 
 <%=label_tag('song[artist_id]', @artist.id %>
 <%=text_field_tag('song[artist_id]')%>
