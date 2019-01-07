@@ -31,9 +31,6 @@ end
 
 private
 
-  @artist = Artist.create(params[:name])
-  @genre = Genre.create(params[:name])
-
   def song_params(*args)
     params.require(:song).permit(*args)
   end
